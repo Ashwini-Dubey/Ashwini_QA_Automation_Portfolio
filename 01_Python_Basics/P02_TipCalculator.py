@@ -12,8 +12,8 @@ Date: July 2025
 """
 
 print("Welcome to the Tip Calculator.")
-bill_amount = float(input("What was the total bill?\n"))
-tip_amount = float(input("How much tip would you like to give?\n"))
+bill_amount = float(input("What was the total bill?\nINR "))
+tip_amount = float(input("How much tip would you like to give?\nINR "))
 people_split = int(input("How many people to split the bill?\n"))
 per_person_pay = round(((bill_amount + tip_amount)/people_split),2)
-print("Each person should pay :", per_person_pay)
+print("Each person should pay : INR", per_person_pay)
