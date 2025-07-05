@@ -8,7 +8,8 @@ operations and string manipulation.
 
 Concepts Used:
 1. Print Statement.
-2. Variables & Usage
+2. Variables & Usage.
+3. User Input Prompt.
 
 Author: Ashwini Dubey
 Date: July 2025
