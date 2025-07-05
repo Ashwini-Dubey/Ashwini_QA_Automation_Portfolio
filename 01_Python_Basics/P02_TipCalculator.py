@@ -7,6 +7,9 @@ This script calculates how much each person should pay when a bill is split amon
 including a specified tip amount. It prompts the user for the total bill, tip amount, and number
 of people splitting the bill, then outputs the per-person amount with two decimal precision.
 
+Concepts Used:
+1. F-string
+
 Author: Ashwini Dubey
 Date: July 2025
 """
@@ -16,4 +19,4 @@ bill_amount = float(input("What was the total bill?\nINR "))
 tip_amount = float(input("How much tip would you like to give?\nINR "))
 people_split = int(input("How many people to split the bill?\n"))
 per_person_pay = round(((bill_amount + tip_amount)/people_split),2)
-print("Each person should pay : INR", per_person_pay)
+print(f"Each person should pay : INR {per_person_pay}")

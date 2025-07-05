@@ -16,8 +16,11 @@ Output
 ------
 A single line printed to the console showing the computed BMI, rounded to the nearest integer.
 
-Author : Ashwini Dubey
-Date   : July 2025
+Concepts Used:
+1. Mathematical Operations
+
+Author : Ashwini Dubey
+Date   : July 2025
 """
 
 print("Welcome to the BMI Calculator.")
