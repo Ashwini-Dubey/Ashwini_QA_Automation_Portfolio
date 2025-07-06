@@ -1,3 +1,24 @@
+"""
+Rollercoaster Ticketing Script
+------------------------------
+
+A small console program that determines whether a user can ride a
+roller‑coaster and, if so, how much they must pay for a ticket.
+
+Concepts Used:
+1. If-else statements
+2. Nested If-else statements.
+
+Inputs
+------
+height : int
+    Rider’s height in centimetres.
+
+age : int
+    Rider’s age in years (asked only if height requirement is met).
+
+"""
+
 print("Welcome to the Rollercoaster!")
 height = int(input("What is your height (in cm)?\n"))
 
