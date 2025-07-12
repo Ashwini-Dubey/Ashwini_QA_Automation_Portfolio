@@ -38,7 +38,10 @@ if height > 120:
     age = int(input("What is your age?\n"))
     pic_consent = input("Do you want the pictures too?\n")
 
-    if age < 12:
+    if age >= 45 and age <= 55:
+            print("Your ride is free.")
+
+    elif age < 12:
 
         if pic_consent == "Yes" :
             print("You have to pay $8 for the ride")
