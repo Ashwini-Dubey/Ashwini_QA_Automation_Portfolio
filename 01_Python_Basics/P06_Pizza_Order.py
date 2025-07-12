@@ -15,7 +15,7 @@ elif size == 'M':
 elif size == 'L':
     pizza_price = 25
 else:
-    print("Invalid Input. Please try again!")
+    print("Invalid Input. Please try again with valid input!")
     quit()
 
 if pepperoni == 'Y':
