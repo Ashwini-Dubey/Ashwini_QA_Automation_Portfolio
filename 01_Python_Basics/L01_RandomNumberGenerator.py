@@ -1,4 +1,7 @@
 import random
 
-random_number = random.randint(1,100)
-print(random_number)
+random_integer = random.randint(1,100)
+print(random_integer)
+
+random_float_0_to_1 = random.random()
+print(random_float_0_to_1)
