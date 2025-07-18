@@ -14,3 +14,11 @@ for score in student_scores:
     if score > max_score:
         max_score = score
 print(max_score)
+
+# This script calculates the sum of all numbers from 1 to 99.
+# It uses a for-loop and a cumulative total variable to perform the addition.
+
+total = 0
+for number in range(1,100):
+    total+=number
+print(total)
