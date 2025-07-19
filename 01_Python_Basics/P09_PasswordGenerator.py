@@ -21,4 +21,23 @@ for num in range(0,pw_numbers):
 for sym in range(0,pw_symbols):
     pass_gen_easy+=random.choice(symbols)
 
-print(pass_gen_easy)
+print("Easy Level Password: ",pass_gen_easy)
+
+#Hard Version
+pass_gen_hard = []
+
+for char in range(0,pw_letters):
+    pass_gen_hard.append(random.choice(letters))
+
+for num in range(0,pw_numbers):
+    pass_gen_hard.append(random.choice(numbers))
+
+for sym in range(0,pw_symbols):
+    pass_gen_hard.append(random.choice(symbols))
+
+random.shuffle(pass_gen_hard)
+
+pass_hard = ""
+for char in pass_gen_hard:
+    pass_hard+=char
+print("Hard Level Password: ",pass_hard)
