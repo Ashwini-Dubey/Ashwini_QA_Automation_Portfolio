@@ -1,4 +1,5 @@
-def my_function():
+def my_function(a,b):
     print("My first function")
+    print(a+b)
 
-my_function()
+my_function(3,4)
