@@ -25,7 +25,7 @@ Usage:
 Run this script using a Python environment with Selenium installed.
 Ensure that ChromeDriver is in the system path.
 """
-
+from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -66,3 +66,14 @@ Step4: Navigates to the cart and verifies:
 driver.find_element(By.ID,"shopping_cart_container").click()
 assert "cart.html" in driver.current_url, "Navigation to cart failed!"
 print("Navigation to card successful!")
+assert "2" in driver.find_element(By.CSS_SELECTOR,".shopping_cart_badge").text, "Cart is having incorrect product count!"
+print("Cart contains correct count of products.")
+assert "Backpack" and "Bike Light" in driver.find_element(By.ID,"cart_contents_container").text,"Incorrect Products are in cart."
+print("Correct products in the cart.")
+
+#Step5: Takes a screenshot of the cart page.
+timestamp = datetime.now()
+driver.save_screenshot(f"Cart_{timestamp}")
+
+#Step6: Closes the browser session
+driver.close()
