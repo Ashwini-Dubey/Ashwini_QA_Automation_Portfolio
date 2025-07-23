@@ -52,23 +52,26 @@ def User_Login():
 def Product_Sort():
     sort = Select(driver.find_element(By.CSS_SELECTOR,".product_sort_container"))
     sort.select_by_value("lohi")
-    driver.save_screenshot("Sort.png")
+
 
 #Step3:
 def Product_Capture():
     lowest_priced_product_name = driver.find_element(By.CSS_SELECTOR,"a[id='item_2_title_link'] div[class='inventory_item_name ']").text
-    lowest_priced_product_price = driver.find_element(By.CSS_SELECTOR,"").text
+    lowest_priced_product_price = driver.find_element(By.CSS_SELECTOR,"div[class='inventory_list'] div:nth-child(1) div:nth-child(2) div:nth-child(2) div:nth-child(1)").text
     print(f"{lowest_priced_product_name}:{lowest_priced_product_price}")
 
     highest_priced_product_name = driver.find_element(By.CSS_SELECTOR,"a[id='item_5_title_link'] div[class='inventory_item_name ']").text
     highest_priced_product_price = driver.find_element(By.CSS_SELECTOR,"div:nth-child(6) div:nth-child(2) div:nth-child(2) div:nth-child(1)").text
     print(f"{highest_priced_product_name}:{highest_priced_product_price}")
 
-
+#Step5:
+def Capture_Screenshot_SortedInventory():
+    driver.save_screenshot("Sort.png")
 
 if __name__ == '__main__':
     User_Login()
     Product_Sort()
+    Product_Capture()
 
 
 
