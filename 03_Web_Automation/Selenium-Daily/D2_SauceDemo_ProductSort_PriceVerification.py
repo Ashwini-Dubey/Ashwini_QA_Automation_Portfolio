@@ -66,7 +66,7 @@ def Product_Capture():
 
 #Step5:
 def Capture_Screenshot_SortedInventory():
-    driver.save_screenshot("Sorted_Inventory.png")
+    driver.save_screenshot("SortedInventory.png")
 
 if __name__ == '__main__':
     User_Login()
